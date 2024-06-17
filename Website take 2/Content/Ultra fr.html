@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Produits</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: gray;
+        }
+        .header {
+            background-color: #f1f1f1;
+            padding: 40px;
+            text-align: center;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .column4 {
+            flex: 1 1 20%;
+            max-width: 20%;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #dddddd00;
+            margin: 10px;
+            background-color: #f9f9f900;
+        }
+        .column4 img {
+            width: 100%;
+            height: auto;
+        }
+        .column4 h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .column4 .price {
+            font-size: 14px;
+            color: #aa3636;
+        }
+        .column4 .add-to-cart {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #2883a7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .column4 .add-to-cart:hover {
+            background-color: #e9b404;
+        }
+        .lfname {
+            font-size: 10px;
+            color: #0051ff;
+            text-shadow: 0px 0px 2px #ffffff;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            height: auto;
+        }
+        p {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .topnav a {
+                padding: 10px;
+                flex: 1 1 100%;
+            }
+            .column4 {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .topnav {
+                flex-direction: column;
+            }
+            .topnav a {
+                padding: 10px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .column4 {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../Images/Ultra.jpg" alt="Ultra Image">
+    <div class="topnav">
+        <a href="Legends Limited fr.html">Legends Limited</a>
+        <a href="About fr.html">À propos</a>
+        <a href="Contact fr.html">Contact</a>
+        <a href="../Homepage fr.html">Page d'accueil</a>
+    </div>
+    <div class="row">
+        <div class="column4">
+            <img src="../Images/BChaIco_0599_GohanTeenSS2_599.webp" alt="Produit 1">
+            <h2>SUPER SAIYAN 2 GOHAN</h2>
+            <p class="price">199,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0586_GokuUIS_586.webp" alt="Produit 2">
+            <h2>ULTRA INSTINCT GOKU</h2>
+            <p class="price">179,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0554_VegitoSSGSS_554.webp" alt="Produit 3">
+            <h2>VEGITO BLUE</h2>
+            <p class="price">150,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0532_GokuBlackRose_532.webp" alt="Produit 4">
+            <h2>GOKU BLACK</h2>
+            <p class="price">130,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0538_BuuFinal_538.webp" alt="Produit 5">
+            <h2>KID BUU</h2>
+            <p class="price">130,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0495_BrolySS1_495.webp" alt="Produit 6">
+            <h2>BROLY</h2>
+            <p class="price">78,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+        <div class="column4">
+            <img src="../Images/BChaIco_0511_Hit_511.webp" alt="Produit 7">
+            <h2>HIT</h2>
+            <p class="price">99,99 €</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+            <div class="lfname">ULTRA</div>
+        </div>
+    </div>
+</body>
+</html>
